@@ -1,45 +1,179 @@
-
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content=" name and email" >
-  <link rel="stylesheet" href="style.css">
-  
-  <title>Document</title>
+  <meta charset="utf-8">
+  <title> Table exercises  </title>
+  <meta name="author" content="April 2020 Richard Zielinski Learner 807420399 ph:0404 357 767">
+  <link rel="stylesheet" href="table.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
-
-
-
-</head>
-
-
 <body>
-
 <div id="wrapper">
-
 <header>
-
 </header>
-
-
 <nav>
-
 </nav>
-
-
 <main>
-  <p> content entered here </p>
+
+	<table id="table1">
+		<caption>
+			<h1>TABLE 1 with COLUMN Headers</h1>
+		</caption>
+		<tr> 
+			
+			<th> Artist </th>
+			<th> Album Name </th>
+			<th> Album Sleeve </th>
+			
+		</tr>
+		<tr>
+			<td>data 1</td>
+			<td>data 2</td>
+			<td>data 3</td>
+		</tr>
+		<tr>
+			<td>data 4</td>
+			<td>data 5</td>
+			<td>data 6</td>
+		</tr>
+	</table>
+
+<p> </p>
+
+<table id="table2">
+	<caption>
+		<h1>TABLE 2 with ROW Headers</h1>
+	</caption>
+	<tr> 
+		<th> Header 1,2 </th>
+		<td>data 1</td>
+		<td>data 2</td>
+	</tr>
+	<tr> 
+		<th> Header 3,4 </th>
+		<td>data 3</td>
+		<td>data 4</td>
+	</tr>
+	<tr> 
+		<th> Header 5,6 </th>
+		<td>data 5</td>
+		<td>data 6</td>
+	</tr>
+</table>
+
+<p> </p>
+
+	<table id="table3">
+		<caption>
+			<h1>TABLE 3  Rows with Colspan </h1>
+		</caption>
+		<tr> 
+			<th> Header 1,4 </th>
+			<th> Header 2,5 </th>
+			<th> Header 3,6 </th>
+		</tr>
+		<tr>
+			<td>data 1</td>
+			<td id="extrawide" colspan="2">data 2</td>
+			
+		</tr>
+		<tr>
+			<td>data 4</td>
+			<td>data 5</td>
+			<td>data 6</td>
+		</tr>
+	</table>
+
+<p> </p>
+<p> </p>
+
+	<table id="table4">
+		<caption>
+			<h1>TABLE 4 with Rowspan</h1>
+		</caption>
+		<tr> 
+			<th> Header 1,2 </th>
+			<td>data 1</td>
+			<td>data 2</td>
+		</tr>
+		<tr> 
+			<th class="extradeep" rowspan="2" > Header 3,4,5,6 </th>
+			<td >data 3</td>
+			<td class="extradeep" rowspan = "2" >data 4</td>
+		</tr>
+		<tr> 
+			<td>data 5</td>	
+		</tr>
+	</table>
+
+<p> </p>
+
+<p> </p>
+
+	<table id="table5">
+		<caption>
+			<h1>TABLE 5 with Rowspan and Colspan</h1>
+		</caption>
+		<tr> 
+			<th> Header 1,2 </th>
+			<td>data 1</td>
+			<td>data 2</td>
+		</tr>
+		<tr> 
+			<th class="extradeep" rowspan="2" > Header 3,4,5,6 </th>
+			<td >data 3</td>
+			<td class="extradeep" rowspan = "2" >data 4</td>
+		</tr>
+		<tr> 
+				<td>data 5</td>
+		</tr>
+		<tr> 
+			<th class="extrawide" > Header 7 </th>
+			<td class="extrawide" colspan = "2" >data 7</td>				
+		</tr>
+	</table>
+
+<p> </p>
+
+	<table id="table6">
+
+		<caption>
+			<h1>Rooms at Myrtle Inn</h1>
+		</caption>
+		<tr> 
+			<th>Room Numbers</th>
+			<th>Room Type</th>
+			<th>Cost per Night</th>
+		</tr>
+		<tr id="rowgarden"> 
+			<td>1-5</td>
+			<td>Garden</td>
+			<td class = "money">$90.00</td>
+		</tr>
+		<tr id = "rowforest">
+			<td>6-10</td>
+			<td>Forest</td>
+			<td class = "money">$160.00</td>
+		</tr>
+		<tr id = "rowsummit">
+			<td>11-20</td>
+			<td>Summit</td>
+			<td class = "money">$275.00</td>			
+		</tr>
+		<tr id= "rowpenthouse">
+			<td>21-22</td>
+			<td>Penthouses</td>
+			<td class = "money">$1,250.00</td>
+		</tr>
+
+
+	</table>
+
+<p> </p>
+
 </main>
-
 <footer>
-
 </footer>
-
-
-
 </div>
-
 </body>
 </html> 
